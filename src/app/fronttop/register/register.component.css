@@ -1,0 +1,17 @@
+.reg{
+
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+.tab{
+  width: 85%;
+  padding: 90px;
+  margin: 20px;
+}
+.sub{ 
+
+  width: 100%;
+  padding-left: 300px;
+  margin-top: 40px;
+ } 
