@@ -9,9 +9,4 @@ export class HomepageComponent {
 
   constructor(private router:Router) { }
 
-  list()
-  {
-    this.router.navigateByUrl('/list');
-  }
-
 }

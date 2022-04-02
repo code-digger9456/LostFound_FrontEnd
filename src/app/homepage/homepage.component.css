@@ -62,7 +62,7 @@ div {
     width: 10%;
     padding-top: 50px;
     padding-right: 30px;
-    padding-bottom: 0%;
+    /* padding-bottom: 20%; */
     padding-left: 15px;
   }
   
@@ -70,7 +70,7 @@ div {
     width: 33%;
     padding-top: 50px;
     padding-right: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     padding-left: 100px;
   }
 
