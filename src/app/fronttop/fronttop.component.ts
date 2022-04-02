@@ -17,8 +17,6 @@ export class FronttopComponent {
   }
 
   login() {
-  //  this.dialog.open(this.login.component.html);
-    //this.router.navigate(['/loginpage']);
   }
 
 }
