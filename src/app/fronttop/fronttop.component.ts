@@ -17,6 +17,7 @@ export class FronttopComponent {
   }
 
   login() {
+    console.log('testing');
   }
 
 }
