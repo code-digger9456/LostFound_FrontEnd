@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-fronttop',
   templateUrl: './fronttop.component.html',
@@ -8,13 +9,16 @@ import { Router } from '@angular/router';
 })
 export class FronttopComponent {
 
-  constructor(private router: Router) { }
+  
+  constructor(private router: Router,public dialog: MatDialog) { }
 
   home() {
     this.router.navigate(['/homepage']);
   }
+
   login() {
-    this.router.navigate(['/loginpage']);
+  //  this.dialog.open(this.login.component.html);
+    //this.router.navigate(['/loginpage']);
   }
 
 }

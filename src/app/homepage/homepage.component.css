@@ -12,8 +12,7 @@
     text-decoration-color: white;
     text-align:center;
    
-    background-image: url(images\image1.jpeg);
-    /* background-repeat: no-repeat; */
+    background-image: url(src\assets\images\image1.jpeg);
     background-attachment: fixed;
 }
 .pos
