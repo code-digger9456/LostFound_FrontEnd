@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListComponent } from './list/list.component';
 import { FronttopComponent } from './fronttop/fronttop.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { LoginComponent } from './fronttop/login/login.component';
 import { RegisterComponent } from './fronttop/register/register.component';
@@ -34,7 +35,8 @@ import { AdditemsComponent } from './additems/additems.component';
     MatIconModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

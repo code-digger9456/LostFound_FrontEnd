@@ -1,9 +1,13 @@
 .ln{
     
-  width: 350px;
-  padding: 200px;
-  margin-bottom: 2px;
-  margin-left: 300px;
-}
+ 
   
+  margin-bottom: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+.reg
+{
+  text-align: right;
+}
   
