@@ -11,10 +11,10 @@ export class FronttopComponent {
   constructor(private router: Router) { }
 
   home() {
-    this.router.navigateByUrl('/home page');
+    this.router.navigate(['/homepage']);
   }
   login() {
-    this.router.navigateByUrl('/login page');
+    this.router.navigate(['/loginpage']);
   }
 
 }
