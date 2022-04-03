@@ -16,6 +16,7 @@ import { TestComponent } from './test/test.component';
 import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
