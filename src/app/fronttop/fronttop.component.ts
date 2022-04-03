@@ -22,7 +22,7 @@ export class FronttopComponent {
   login() {
     this.dialog.open(LoginComponent);
     
-r
+
   }
 
 

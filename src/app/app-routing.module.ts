@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'list' , component: AdditemsComponent },
   { path: 'test', component: TestComponent},
+  // {path :'**', component: HomepageComponent},
 ];
 
 @NgModule({

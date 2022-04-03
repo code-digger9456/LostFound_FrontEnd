@@ -16,39 +16,11 @@
     background-attachment: fixed;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
- 
-}
-
-
-/* Control the left side */
-.left {
-  left: 0;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
- 
-<<<<<<< HEAD
-}
 
 
 .pos
 {
     text-align: center;
-=======
->>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
 }
 .size
 {

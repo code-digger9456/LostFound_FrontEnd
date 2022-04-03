@@ -6,20 +6,10 @@
         <mat-label>Email</mat-label>
         <input matInput type="text">
     </mat-form-field>
-<br>
+    <br>
     <mat-form-field appearance="fill">
         <mat-label>Password</mat-label>
         <input matInput [type]="hide ? 'password' : 'text'">
-<<<<<<< HEAD
-        
-
-    </mat-form-field>
-    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
-=======
-
     </mat-form-field>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
         [attr.aria-pressed]="hide">
@@ -29,19 +19,9 @@
     <br>
 </div>
 
-    <a href='javascript:void(0)'>Forgot Password?</a>
-    <br>
->>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
-    <br>
-    <br>
-
-    <a href='javascript:void(0)'>Forgot Password?</a>
+<a href='javascript:void(0)'>Forgot Password?</a>
 <br>
 
 <br>
 Nead an account?
-    <button class="reg" mat-raised-button  (click)="register()">Register</button>
-    <!-- <a href='javascript:void(0)' [routerLink]="['/register']">Register</a> -->
-
-
-    </div>
+<button class="reg" mat-raised-button (click)="register()">Register</button>

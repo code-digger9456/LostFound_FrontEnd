@@ -17,8 +17,7 @@ import {MatInputModule} from '@angular/material/input';
 import { TestComponent } from './test/test.component';
 import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,15 +38,9 @@ import {MatTableModule} from '@angular/material/table';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
-<<<<<<< HEAD
-    MatDialogModule,
-    MatTableModule
-=======
-
     MatDialogModule,
     MatTableModule
 
->>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
   ],
   
   providers: [],
