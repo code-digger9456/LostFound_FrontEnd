@@ -16,7 +16,10 @@
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
 .split {
   height: 100%;
   width: 50%;
@@ -37,12 +40,15 @@
 .right {
   right: 0;
  
+<<<<<<< HEAD
 }
 
 
 .pos
 {
     text-align: center;
+=======
+>>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
 }
 .size
 {

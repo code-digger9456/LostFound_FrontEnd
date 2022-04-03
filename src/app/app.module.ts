@@ -8,7 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListComponent } from './list/list.component';
 import { FronttopComponent } from './fronttop/fronttop.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './fronttop/login/login.component';
 import { RegisterComponent } from './fronttop/register/register.component';
 import {MatInputModule} from '@angular/material/input';
@@ -37,9 +39,17 @@ import {MatTableModule} from '@angular/material/table';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
+<<<<<<< HEAD
     MatDialogModule,
     MatTableModule
+=======
+
+    MatDialogModule,
+    MatTableModule
+
+>>>>>>> 52a43848af18a73da3184c58cd81123f255d7dbd
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
