@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   hide = true;
-
+register()
+{
+  this.dialog.open(RegisterComponent);
+}
 }
