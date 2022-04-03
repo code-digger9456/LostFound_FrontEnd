@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import { TestComponent } from './test/test.component';
 import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { AdditemsComponent } from './additems/additems.component';
     MatIconModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

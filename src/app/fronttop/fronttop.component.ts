@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-fronttop',
@@ -17,7 +18,8 @@ export class FronttopComponent {
   }
 
   login() {
-    console.log('testing');
+    this.dialog.open(LoginComponent);
+    
   }
 
 }

@@ -1,13 +1,11 @@
 <!-- <app-fronttop></app-fronttop> -->
 
 <div class="ln">
-    &#9673;&nbsp;&nbsp;&nbsp;
     <mat-form-field appearance="fill">
         <mat-label>Email</mat-label>
         <input matInput type="text">
     </mat-form-field>
     <br>
-    &#9673;&nbsp;&nbsp;&nbsp;
     <mat-form-field appearance="fill">
         <mat-label>Enter your password</mat-label>
         <input matInput [type]="hide ? 'password' : 'text'">
@@ -17,7 +15,7 @@
         </button>
     </mat-form-field>
     <br>
-    <a href='javascript:void(0)'>Forgot Password?</a> &nbsp;&nbsp;
+    <a href='javascript:void(0)'>Forgot Password?</a>
     <a href='javascript:void(0)' [routerLink]="['/register']">Register</a>
 
 </div>
