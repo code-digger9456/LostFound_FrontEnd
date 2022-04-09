@@ -8,6 +8,9 @@ export interface PreodicElement
 
 }
 
+
+}
+
 const ELEMENT_DATA : PreodicElement[]= 
 [
    {position : 1 , name: 'Hydrogen'},
@@ -22,7 +25,6 @@ export class HomepageComponent {
 
   constructor(private router:Router) { }
 
-  displayedColumns : string[]=[ 'position', 'name'];
-  dataSource=ELEMENT_DATA;
+ 
  
 }

@@ -8,15 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListComponent } from './list/list.component';
 import { FronttopComponent } from './fronttop/fronttop.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './fronttop/login/login.component';
 import { RegisterComponent } from './fronttop/register/register.component';
 import {MatInputModule} from '@angular/material/input';
 import { TestComponent } from './test/test.component';
 import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule,FormBuilder, FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,11 +42,14 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatDialogModule,
     MatTableModule,
-    MatTableModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
 
   ],
   
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
