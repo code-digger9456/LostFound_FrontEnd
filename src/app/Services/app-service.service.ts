@@ -10,7 +10,6 @@ export class AppServiceService {
 
 addUserDetails(payload:any)
 {
-  debugger;
   return this.http.post("https://localhost:44326/api/Home",payload);
 
 }
