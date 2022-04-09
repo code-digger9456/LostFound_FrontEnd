@@ -9,7 +9,7 @@ export interface PreodicElement
 }
 
 
-}
+
 
 const ELEMENT_DATA : PreodicElement[]= 
 [

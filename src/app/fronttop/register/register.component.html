@@ -63,13 +63,13 @@
 
 
 <div [formGroup]="userForm"> 
-    <p><input type="text" placeholder="first Name " formControlName="firstName"></p>
+    <p><input type="text" placeholder="first Name " formControlName="firstName" required></p>
     <p><input type="text" placeholder="Last Name " formControlName="lastName"></p>
-    <p><input type="text" placeholder="gender" formControlName="gender"></p>
+    <p><input type="text" placeholder="gender" formControlName="gender" required></p>
     <p><input type="text" placeholder="email " formControlName="email"></p>
     <p><input type="text" placeholder="phone " formControlName="phone"></p>
     <p><input type="text" placeholder="address " formControlName="address"></p>
-    <p><input type="text" placeholder="password " formControlName="password"></p>
+    <p><input type="text" placeholder="password " formControlName="password" required></p>
     <p><input type="text" placeholder="security question " formControlName="SecurityQuestion"></p>
     <input type="Submit" (click)="onSubmit()">
 </div> 

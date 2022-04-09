@@ -19,6 +19,8 @@ import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule,FormBuilder, FormsModule } from '@angular/forms';
+import { UserListComponent } from './Components/user-list/user-list.component';
+import { LostItemsListComponent } from './Components/lost-items-list/lost-items-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ReactiveFormsModule,FormBuilder, FormsModule } from '@angular/forms';
     RegisterComponent,
     TestComponent,
     Test1Component,
-    AdditemsComponent
+    AdditemsComponent,
+    UserListComponent,
+    LostItemsListComponent
   ],
   imports: [
     BrowserModule,

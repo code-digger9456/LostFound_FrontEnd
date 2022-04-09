@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import {MatDialog,MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { AppServiceService } from 'src/app/Services/app-service.service';
 import { FormBuilder,Validators } from '@angular/forms';
-import { UserForm } from 'src/app/Modals/UserForm';
+import { UserDetail } from 'src/app/Modals/UserForm';
 
 @Component({
   selector: 'app-register',
@@ -14,11 +14,11 @@ export class RegisterComponent  {
 
   constructor(@Inject(MAT_DIALOG_DATA) public dialog: MatDialog ,
                 private userservice:AppServiceService,
-                private fb :FormBuilder
+                private fb :FormBuilder,
 
   ) { }
  
- payload: UserForm = new UserForm;
+ payload: UserDetail = new UserDetail;
  hide=true;
 
 
@@ -43,8 +43,8 @@ onSubmit(){
   this.payload.Address=this.userForm.get('address')?.value;
   this.payload.Password=this.userForm.get('password')?.value;
   this.payload.SecurityQuestion=this.userForm.get('SecurityQuestion')?.value;
-  console.log(this.payload);
-    this.userservice.addUserDetails(this.payload).subscribe(data=>console.log(data));
-
+  this.userservice.addUserDetails(this.payload).subscribe();
+  //closing dialog box
+  
   }
 }
