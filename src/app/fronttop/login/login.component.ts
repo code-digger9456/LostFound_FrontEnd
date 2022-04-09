@@ -17,10 +17,6 @@ export class LoginComponent {
   constructor(public dialog: MatDialog,private userservices: AppServiceService) { }
 
   hide = true;
-  register() {
-    this.dialog.open(RegisterComponent);
-  }
-
   register():void
   {
     this.dialog.open(RegisterComponent);    
