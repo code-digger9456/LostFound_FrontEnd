@@ -45,11 +45,10 @@ import { ReactiveFormsModule,FormBuilder, FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
-
-
   ],
-  
+
   providers: [FormBuilder],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
