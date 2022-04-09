@@ -18,12 +18,9 @@ export class FronttopComponent {
     this.router.navigate(['/homepage']);
   }
 
-  login():void {
-    this.dialog.open(LoginComponent, {
-      data: {
-        animal: 'panda',
-      },
-    });
+  login() {
+    this.dialog.open(LoginComponent);
+    
   }
 
 

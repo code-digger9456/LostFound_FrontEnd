@@ -1,8 +1,9 @@
-import { Component, Inject } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
+
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AppServiceService } from 'src/app/Services/app-service.service';
 import { RegisterComponent } from '../register/register.component';
-
-
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,14 @@ import { RegisterComponent } from '../register/register.component';
 })
 export class LoginComponent {
 
-  constructor(public dialog: MatDialog ) { }
+
+
+  constructor(public dialog: MatDialog,private userservices: AppServiceService) { }
 
   hide = true;
+  register() {
+    this.dialog.open(RegisterComponent);
+  }
 
   register():void
   {
@@ -21,3 +27,4 @@ export class LoginComponent {
   
   }
 }
+
