@@ -49,11 +49,10 @@ import { LostItemsListComponent } from './Components/lost-items-list/lost-items-
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
-
-
   ],
-  
+
   providers: [FormBuilder],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
