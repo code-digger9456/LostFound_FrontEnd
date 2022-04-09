@@ -1,12 +1,52 @@
-    <div class="position">
-        <h1 style="color:white">LOST AND FOUND PORTAL</h1>
-        <h3 style="color:white">A WEB PORTAL FOR LOST AND FOUND PEOPLE</h3>
+<div class="split left">
+    <div class="centered ">
+        <div class="position">
+            <h1 style="color:white">LOST AND FOUND PORTAL</h1>
+            <h3 style="color:white">A WEB PORTAL FOR LOST AND FOUND PEOPLE</h3>
+        </div>
+
+        <div class="pos">
+            <br>
+            <h2 style="color:rgb(0, 47, 255)">NAVIGATE TO:</h2>
+            <button class="size" mat-raised-button color="primary">Add the found items</button>
+        </div>
     </div>
-    <div class="pos">
-        <h2 style="color:rgb(0, 47, 255)">NAVIGATE TO:</h2>
-        <button class="size" mat-raised-button color="primary">Add the found items</button>
+</div>
+
+<!-- Lost Iteam Table -->
+
+<div class="split right">
+    <div class="centered">
+
+      <table [dataSource]="dataSource">
+
+         <!-- Position Column -->
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+          </ng-container>
+
+          <!-- Name column -->
+          <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let element">{{element.name}}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+          
     </div>
-    <div class="section">
+</div>
+
+
+
+
+
+
+
+<!-- <div class="section">
     <div class="row">
         <div class="column side">
             <h2 class="c">1.CLICK ON ADD BUTTON TO ADD FOUND ITEMS</h2>
@@ -29,4 +69,4 @@
 
         </div>
     </div>
-</div>
+</div> -->

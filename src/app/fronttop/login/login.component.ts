@@ -1,6 +1,10 @@
+
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RegisterComponent } from '../register/register.component';
+
+
+
 
 @Component({
   selector: 'app-login',
@@ -9,6 +13,7 @@ import { RegisterComponent } from '../register/register.component';
 })
 export class LoginComponent {
 
+
   constructor(public dialog: MatDialog) { }
 
   hide = true;
@@ -16,4 +21,5 @@ register()
 {
   this.dialog.open(RegisterComponent);
 }
+
 }

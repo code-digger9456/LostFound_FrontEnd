@@ -38,8 +38,11 @@ import {MatTableModule} from '@angular/material/table';
     MatToolbarModule,
     MatInputModule,
     MatDialogModule,
+    MatTableModule,
     MatTableModule
+
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
