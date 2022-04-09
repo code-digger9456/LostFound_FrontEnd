@@ -1,4 +1,4 @@
-<div class="tab">
+<!-- <div [formGroup]="userForm" class="tab">
 
     <h1>Registration </h1>
     <table class="reg">
@@ -6,13 +6,13 @@
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label>First Name </mat-label>
-                    <input matInput type="text">
+                    <input matInput formControlName="firstName" type="text">
                 </mat-form-field>
             </td>
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label>Last Name </mat-label>
-                    <input matInput type="text">
+                    <input matInputformControlName="lastName"  type="text">
                 </mat-form-field>
             </td>
         </tr>
@@ -20,13 +20,13 @@
             <td> 
                 <mat-form-field appearance="fill">
                     <mat-label>Gender </mat-label>
-                    <input matInput type="text">
+                    <input matInput formControlName="gender" type="text">
                 </mat-form-field>
             </td>
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label> Email-Id </mat-label>
-                    <input matInput type="text">
+                    <input matInput formControlName="email" type="text">
                 </mat-form-field>
             </td>
         </tr>
@@ -34,13 +34,13 @@
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label> Phone No </mat-label>
-                    <input matInput type="text">
+                    <input matInput formControlName="phone"  type="text">
                 </mat-form-field>
             </td>
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label>Address</mat-label>
-                    <input matInput type="text">
+                    <input mat InputformControlName="address"  type="text">
                 </mat-form-field>
             </td>
         </tr>
@@ -48,7 +48,7 @@
             <td>
                 <mat-form-field appearance="fill">
                     <mat-label>Enter your password</mat-label>
-                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                         [attr.aria-pressed]="hide">
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -59,14 +59,28 @@
                 <mat-form-field appearance="fill">
                     <mat-label>Security question for password recovery<br>
                         Enter your pet name</mat-label>
-                    <input matInput type="text">
+                    <input matInput formControlName="SecurityQuestion" type="text">
                 </mat-form-field>
             </td>
         </tr>
         <div class="sub">
             <tr>
-                <button mat-raised-button color="primary">submit</button>
+                <button mat-raised-button color="primary" (click)="onSubmit()">submit</button>
             </tr>
         </div>
     </table>
-</div>
+</div> -->
+
+
+
+<div [formGroup]="userForm"> 
+    <p><input type="text" placeholder="first Name " formControlName="firstName"></p>
+    <p><input type="text" placeholder="Last Name " formControlName="lastName"></p>
+    <p><input type="text" placeholder="gender" formControlName="gender"></p>
+    <p><input type="text" placeholder="email " formControlName="email"></p>
+    <p><input type="text" placeholder="phone " formControlName="phone"></p>
+    <p><input type="text" placeholder="address " formControlName="address"></p>
+    <p><input type="text" placeholder="password " formControlName="password"></p>
+    <p><input type="text" placeholder="security question " formControlName="SecurityQuestion"></p>
+    <input type="Submit" (click)="onSubmit()">
+</div> 

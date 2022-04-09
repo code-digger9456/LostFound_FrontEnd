@@ -17,6 +17,8 @@ import {MatInputModule} from '@angular/material/input';
 import { TestComponent } from './test/test.component';
 import { Test1Component } from './test1/test1.component';
 import { AdditemsComponent } from './additems/additems.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule,FormBuilder, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,11 +41,15 @@ import { AdditemsComponent } from './additems/additems.component';
     MatToolbarModule,
     MatInputModule,
     MatDialogModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
 
   ],
   
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
